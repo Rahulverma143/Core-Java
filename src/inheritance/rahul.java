@@ -1,20 +1,23 @@
 package inheritance;
 
-
-	// extends keywords (is a relation) (type of inheritance )inherit the properties of parent to child
+// extends keywords (is a relation) (type of inheritance )inherit the properties of parent to child
 class parent {
 	int a = 10;
-	void m1 () {
+
+	void m1() {
 		System.out.println("m1 method inside the class parent ");
 	}
 }
+
 class child extends parent {
 	int b = 20;
-	void m2 () {
+
+	void m2() {
 		System.out.println("m2 method inside the class child ");
 	}
-	
+
 }
+
 public class rahul {
 
 	public static void main(String[] args) {
@@ -22,7 +25,7 @@ public class rahul {
 		System.out.println(c1.a);
 		c1.m1();
 		System.out.println(c1.b);
-	     c1.m2();
+		c1.m2();
 
 	}
 

@@ -1,39 +1,46 @@
 package inheritance;
 
-	class Author{
-		String name;
-		String address;
-		public Author(String name, String address) {
-			this.name=name;
-			this.address=address;
-		}
-		void showAuthor() {
-			System.out.println("Author Name: " + name + " " + "Auther address: "+ address );
-		}
-		@Override
-		public String toString() {
-			return "Author [name=" + name + ", address=" + address + "]";
-		}
+class Author {
+	String name;
+	String address;
+
+	public Author(String name, String address) {
+		this.name = name;
+		this.address = address;
 	}
-	class Book{
-		String name;
-		int price;
-		int published;
-		Author author;
-		public Book(String name , int price , int published , Author author) {
-			this.name=name;
-			this.price=price;
-			this.published= published;
-			this.author=author;
-			
-		}
-		void showBook() {
-			System.out.println("Book name :" + name);
-			System.out.println("Book price :" + " " + price);
-			System.out.println("Book published :" + " " + published);
-			System.out.println("Author :" + " " + author);
-		}
+
+	void showAuthor() {
+		System.out.println("Author Name: " + name + " " + "Auther address: " + address);
 	}
+
+	@Override
+	public String toString() {
+		return "Author [name=" + name + ", address=" + address + "]";
+	}
+}
+
+class Book {
+	String name;
+	int price;
+	int published;
+	Author author;
+
+	public Book(String name, int price, int published, Author author) {
+		this.name = name;
+		this.price = price;
+		this.published = published;
+		this.author = author;
+
+	}
+
+	void showBook() {
+		System.out.println("Book name :" + name);
+		System.out.println("Book price :" + " " + price);
+		System.out.println("Book published :" + " " + published);
+		System.out.println("Author :" + " " + author);
+	}
+}
+
 public class Aggregation2 {
 
 	public static void main(String[] args) {
@@ -49,20 +56,20 @@ public class Aggregation2 {
 		a4.showAuthor();
 		a5.showAuthor();
 		a6.showAuthor();
-		
-		Book b1 = new Book("Java", 5999 , 1999 , a1);
-		Book b2 = new Book("Python" , 4999, 2000, a2);
+
+		Book b1 = new Book("Java", 5999, 1999, a1);
+		Book b2 = new Book("Python", 4999, 2000, a2);
 		Book b3 = new Book("SpringBoot", 3999, 2001, a3);
-		Book b4 = new Book("Python" , 2999, 2002, a4);
+		Book b4 = new Book("Python", 2999, 2002, a4);
 		Book b5 = new Book("DSA", 1999, 2003, a5);
-		Book b6 = new Book("C" , 1979, 2004, a6);
+		Book b6 = new Book("C", 1979, 2004, a6);
 		b1.showBook();
 		b2.showBook();
 		b3.showBook();
 		b4.showBook();
 		b5.showBook();
 		b6.showBook();
-		
+
 	}
 
 }

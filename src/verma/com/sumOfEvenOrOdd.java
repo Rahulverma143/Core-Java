@@ -19,9 +19,9 @@ public class sumOfEvenOrOdd {
 			int digit = n % 10;
 
 			if (digit % 2 == 0) {
-			evenSum =  evenSum + digit;
+				evenSum = evenSum + digit;
 			} else {
-				oddSum  = oddSum + digit;
+				oddSum = oddSum + digit;
 			}
 			n = n / 10;
 		}

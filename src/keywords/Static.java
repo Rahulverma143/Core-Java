@@ -24,22 +24,24 @@ package keywords;
 	}
 }
    */
- 
- package keywords;	
- public class Static {
-	 int a = 10;
-	 static int b = 20;
-	 public static void main(String[] args) {
-		 Static s1 = new Static();
-		 s1.a++;
-		 s1.b++;
-		 
-		 s1.a++;
-		 s1.b++;
-		 
-		 System.out.println(s1.a);  //12
-		 System.out.println(s1.b);  //22
-		 System.out.println(Static.b);  //22
-		 
-   }
- }
+
+package keywords;
+
+public class Static {
+	int a = 10;
+	static int b = 20;
+
+	public static void main(String[] args) {
+		Static s1 = new Static();
+		s1.a++;
+		s1.b++;
+
+		s1.a++;
+		s1.b++;
+
+		System.out.println(s1.a); // 12
+		System.out.println(s1.b); // 22
+		System.out.println(Static.b); // 22
+
+	}
+}

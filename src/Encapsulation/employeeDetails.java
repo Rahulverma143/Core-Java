@@ -1,15 +1,15 @@
 package Encapsulation;
 
 public class employeeDetails {
-	
+
 	private long empId;
 	private String name;
 	private String emailId;
 	private String cityName;
 	private String companyName;
-	
+
 	// using setter and getter (encapsulation)
-	
+
 	public void setDetails(long empId, String name, String emailId, String cityName, String companyName) {
 		this.empId = empId;
 		this.name = name;
@@ -17,25 +17,27 @@ public class employeeDetails {
 		this.cityName = cityName;
 		this.companyName = companyName;
 	}
-	
+
 	public long getEmpId() {
 		return empId;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public String getEmailId() {
 		return emailId;
 	}
+
 	public String getCityName() {
 		return cityName;
 	}
+
 	public String getCompanyName() {
 		return companyName;
 	}
-	
+
 	public static void main(String[] args) {
 		employeeDetails s1 = new employeeDetails();
 		s1.setDetails(77170032L, "Rahul Verma", "rahul@gmail.com", "Jaipur", "Regex Software service");

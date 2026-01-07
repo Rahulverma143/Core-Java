@@ -1,4 +1,4 @@
- package Encapsulation;
+package Encapsulation;
 
 public class studentDetailsUsingConstructor {
 

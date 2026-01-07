@@ -6,8 +6,8 @@ public class Concatenation {
 		String name = "Alice";
 		int a = 15;
 		char ch = 'A';
-		
-		System.out.println(a+ch+name+a+ch);
+
+		System.out.println(a + ch + name + a + ch);
 
 	}
 

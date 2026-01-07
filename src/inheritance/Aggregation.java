@@ -1,35 +1,43 @@
 package inheritance;
-	class Address{
-		int streetNo;
-		int pinCode;
-		String cityName;
-		String stateName;
-		public Address (int streetNo, int pinCode, String cityName, String stateName){
-			this.streetNo=streetNo;
-			this.pinCode=pinCode;
-			this.cityName=cityName;
-			this.stateName=stateName;
-		}
-		void showAddress() {
-			System.out.println(streetNo + " " + pinCode + " " + cityName + " " + stateName);
-		}
-		@Override
-		public String toString() {
-			return "Address [streetNo=" + streetNo + ", pinCode=" + pinCode + ", cityName=" + cityName + ", stateName="
-					+ stateName + "]";
-		}
+
+class Address {
+	int streetNo;
+	int pinCode;
+	String cityName;
+	String stateName;
+
+	public Address(int streetNo, int pinCode, String cityName, String stateName) {
+		this.streetNo = streetNo;
+		this.pinCode = pinCode;
+		this.cityName = cityName;
+		this.stateName = stateName;
 	}
-	class Student{
-		String stName;
-		Address ad;
-		public Student(String stName,Address ad ) {
-			this.stName=stName;
-			this.ad=ad;
-		}
-		void showStudent() {
-			System.out.println(stName + " " + ad);
-		}
+
+	void showAddress() {
+		System.out.println(streetNo + " " + pinCode + " " + cityName + " " + stateName);
 	}
+
+	@Override
+	public String toString() {
+		return "Address [streetNo=" + streetNo + ", pinCode=" + pinCode + ", cityName=" + cityName + ", stateName="
+				+ stateName + "]";
+	}
+}
+
+class Student {
+	String stName;
+	Address ad;
+
+	public Student(String stName, Address ad) {
+		this.stName = stName;
+		this.ad = ad;
+	}
+
+	void showStudent() {
+		System.out.println(stName + " " + ad);
+	}
+}
+
 public class Aggregation {
 	public static void main(String[] args) {
 		Address a1 = new Address(110, 182122, "Jaipur", "Rajasthan");
@@ -46,13 +54,13 @@ public class Aggregation {
 		a5.showAddress();
 		a6.showAddress();
 		a7.showAddress();
-		Student s1 = new Student("Rahul verma", a1 );
-		Student s2 = new Student ("Devansh", a2);
-		Student s3 = new Student ("Tarun", a3);
-		Student s4 = new Student ("Rahul Pareek",a4);
-		Student s5 = new Student ("Traun kalla", a5);
-		Student s6 = new Student ("Rajdeep" , a6);
-		Student s7 = new Student ("Rohit", a7);
+		Student s1 = new Student("Rahul verma", a1);
+		Student s2 = new Student("Devansh", a2);
+		Student s3 = new Student("Tarun", a3);
+		Student s4 = new Student("Rahul Pareek", a4);
+		Student s5 = new Student("Traun kalla", a5);
+		Student s6 = new Student("Rajdeep", a6);
+		Student s7 = new Student("Rohit", a7);
 		s1.showStudent();
 		s2.showStudent();
 		s3.showStudent();

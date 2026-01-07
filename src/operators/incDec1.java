@@ -11,5 +11,3 @@ public class incDec1 {
 
 }
 //output 12
-
-

@@ -1,6 +1,7 @@
 package verma.com;
 
 import java.util.Scanner;
+
 public class p16 {
 
 	static int checkBirthday(int day, String month) {
@@ -12,17 +13,16 @@ public class p16 {
 	}
 
 	public static void main(String[] args) {
-	System.out.println("Enter the day and date");
-	Scanner sc = new Scanner(System.in);
-	String month = sc.nextLine();
-	int day = sc.nextInt();
-	
-	int hi = checkBirthday(day , month);
-	if(hi == 1) {
-		System.out.println("Remenber");
+		System.out.println("Enter the day and date");
+		Scanner sc = new Scanner(System.in);
+		String month = sc.nextLine();
+		int day = sc.nextInt();
+
+		int hi = checkBirthday(day, month);
+		if (hi == 1) {
+			System.out.println("Remenber");
+		} else {
+			System.out.println("Not remember");
+		}
 	}
-	else {
-		System.out.println("Not remember");
-	}
-}
 }
